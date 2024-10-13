@@ -48,7 +48,6 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation(libs.mediation.test.suite)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -78,6 +77,11 @@ dependencies {
     // coRoutines
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
     implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.0")
+
+    // viewPager2
+    dependencies {
+        implementation("androidx.viewpager2:viewpager2:1.1.0")
+    }
 
 }
 kapt {

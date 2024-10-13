@@ -5,8 +5,8 @@ data class UserMatches(
 )
 
 data class MatchListItem (
-    val matchItem: MatchItem,
-    val user_contests:Int,
-    val user_teams:Int,
-    val top_running_rank:Int
+    val match: MatchItem? = null,
+    val user_contests:Int? = null,
+    val user_teams:Int? = null,
+    val top_running_rank:Int? = null
 )

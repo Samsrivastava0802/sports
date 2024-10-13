@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="14dp"
+        android:layout_margin="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RelativeLayout
+                android:id="@+id/rlBarTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginVertical="4dp">
+
+                <LinearLayout
+                    android:id="@+id/llTop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="6dp">
+
+                    <TextView
+                        android:id="@+id/tvT20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="T20"
+                        android:textSize="16dp"
+                        android:textColor="@color/blue"/>
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginHorizontal="8dp"
+                        android:background="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/tvWomenCup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Women Asia Cup"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivDot"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/dot"
+                    app:tint="@color/red"
+                    android:layout_toStartOf="@+id/tvLive"
+                    android:layout_marginBottom="6dp"
+                    android:paddingStart="12dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvLive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Live"
+                    android:textSize="20sp"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/red"
+                    android:layout_alignParentEnd="true"/>
+
+                <View
+                    android:layout_below="@+id/llTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="6dp"
+                    android:background="@color/black"
+                    android:layout_marginHorizontal="8dp" />
+
+            </RelativeLayout>
+
+            <!-- middle bar -->
+
+            <RelativeLayout
+                android:layout_below="@+id/rlBarTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                >
+
+                <LinearLayout
+                    android:id="@+id/llImage1"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:background="@color/blue"
+                    android:orientation="horizontal"
+                    />
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:text="DC"
+                    android:layout_toEndOf="@+id/ivTeamA"
+                    android:layout_marginTop="12dp"/>
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:text="MI"
+                    android:layout_toStartOf="@+id/ivTeamB"
+                    android:layout_marginTop="12dp"/>
+
+
+                <ImageView
+                    android:id="@+id/ivTeamA"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/offer_1"
+                    android:layout_marginStart="28dp"/>
+
+                <ImageView
+                    android:id="@+id/ivTeamB"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/offer_1"
+                    android:layout_marginStart="290dp"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/llImage2"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/blue"
+                    android:orientation="horizontal"
+                    android:layout_marginEnd="-20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+
+                       <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vs"
+                            android:textColor="@color/red"
+                            android:layout_margin="10dp"
+                            android:paddingStart="6dp"
+                            />
+
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <!-- bottom bar -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/grey">
+
+                <LinearLayout
+                    android:id="@+id/llJoin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="12dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                   >
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JOININGS"
+                        android:textSize="10sp"
+                        android:gravity="center_vertical"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvJoinedTeams"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(5)"
+                        android:textSize="10sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llContest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_toRightOf="@+id/llJoin"
+                    android:layout_marginStart="8dp"
+                    android:layout_centerVertical="true"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CONTENTSTS"
+                        android:textSize="10sp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tvContest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(2)"
+                        android:textSize="10sp"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llRank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_centerVertical="true"
+                    >
+                    <ImageView
+                        android:id="@+id/ivBadge"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/circletshirt"
+                        android:layout_gravity="center_vertical"/>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TOP RUNNING RANK :"
+                        android:textSize="10sp"
+
+                        />
+                    <TextView
+                        android:id="@+id/tvTopRunningRank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="22"
+                        android:textSize="10sp"
+
+                        />
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
